@@ -15,16 +15,28 @@ group :assets do
   gem 'uglifier'
 end
 
-gem 'jquery-rails'
+#gem 'jquery-rails'
 gem 'therubyracer'
-gem 'rack', '1.3.3'
+gem 'rack'
 
 #gem 'pg'
 #gem 'haml-rails'
 #gem 'will_paginate'
 
+group :development, :test do
+  gem 'jquery-rails'
+  gem 'nifty-generators'
+  gem 'rspec-rails'
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'spork'
+  gem 'launchy'
+  gem 'rcov'
+  gem 'database_cleaner'
+end
+
 #gem 'nifty-generators'
-gem 'rspec-rails'
+#gem 'rspec-rails'
 #gem 'cucumber-rails'
 #gem 'capybara'
 #gem 'spork'
