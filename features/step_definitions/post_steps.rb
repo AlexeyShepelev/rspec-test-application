@@ -1,4 +1,4 @@
-Given /^I am on the post page$/ do
+Given /^I am on t"I should be on the home page"he post page$/ do
   visit posts_path
 end
 
@@ -16,4 +16,13 @@ end
 
 Then /^I should see "([^"]*)"$/ do |arg1|
   assert page.has_content?(arg1)
+end
+
+Given /^I am a logged in user$/ do
+  Given "I am on the login page"
+  And "I have a user with email \"test@mail.com\" and password \"111111\""
+  And "I fill in \"email\" for \"test@mail.com\""
+  And "I fill in \"password\" for \"111111\""
+  And "I press button \"Log in\""
+  And "I should be on the home page"
 end

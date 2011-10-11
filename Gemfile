@@ -18,6 +18,7 @@ end
 #gem 'jquery-rails'
 gem 'therubyracer'
 gem 'rack'
+gem 'sorcery'
 
 #gem 'pg'
 #gem 'haml-rails'
@@ -34,14 +35,6 @@ group :development, :test do
   gem 'rcov'
   gem 'database_cleaner'
 end
-
-#gem 'nifty-generators'
-#gem 'rspec-rails'
-#gem 'cucumber-rails'
-#gem 'capybara'
-#gem 'spork'
-#gem 'launchy'
-#gem 'rcov'
 
 # Use unicorn as the web server
 # gem 'unicorn'
