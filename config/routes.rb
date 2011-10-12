@@ -1,4 +1,10 @@
 TestApplication::Application.routes.draw do
+  get "password_resets/create"
+
+  get "password_resets/edit"
+
+  get "password_resets/update"
+
   #get "sessions/new"
   #
   #get "users/new"
@@ -8,6 +14,7 @@ TestApplication::Application.routes.draw do
   get "signup" => "users#new", :as => "signup"
   resources :users
   resources :sessions
+  resources :password_resets
 
   root :to => "home#index"
 
